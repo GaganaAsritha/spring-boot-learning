@@ -20,3 +20,10 @@
 "username": "admin",
 "password": "1234"
 }
+
+## Day 2
+- Added validation using @NotBlank
+- Learned @Valid annotation
+- Understood how Spring throws validation exceptions
+- Implemented Global Exception Handler
+- Extracted field-level error messages

@@ -1,5 +1,6 @@
 package com.asritha.demo;
 
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -12,7 +13,7 @@ public class AuthController{
     }
 
     @PostMapping("/login")
-    public String login(@RequestBody LoginRequest request){
+    public String login(@Valid @RequestBody LoginRequest request){
         return authService.login(request.username, request.password);
     }
 }
