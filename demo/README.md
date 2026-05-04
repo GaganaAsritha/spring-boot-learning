@@ -1,6 +1,6 @@
 # Spring Boot Learning Journey
 
-## Day 1
+## 🔹 Spring Boot Basics
 - Setup Spring Boot project
 - Created GET API (/hello)
 - Learned @RequestParam
@@ -9,21 +9,29 @@
 - Implemented Service Layer
 - Understood Dependency Injection
 
-## Endpoints
 
-### GET
-/hello?name=YourName
 
-### POST
-/login
-{
-"username": "admin",
-"password": "1234"
-}
-
-## Day 2
+## 🔹 Validation & Exception Handling
 - Added validation using @NotBlank
 - Learned @Valid annotation
 - Understood how Spring throws validation exceptions
 - Implemented Global Exception Handler
 - Extracted field-level error messages
+
+
+
+## 🔹 Response Structuring
+- Introduced ResponseEntity for proper HTTP status handling
+- Differentiated between HTTP status and response body
+- Implemented structured API responses
+- Created reusable ApiResponse wrapper class
+
+
+
+## 🔹 Endpoints
+
+### GET
+- /hello?name=YourName
+
+### POST
+- /login
