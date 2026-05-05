@@ -24,7 +24,7 @@ public ResponseEntity<ApiResponse<String>> login(@Valid @RequestBody LoginReques
 
        String result = authService.login(request.username, request.password);
 
-       ApiResponse<String> response = new ApiResponse<>(200, result);
+       ApiResponse<String> response = new ApiResponse<>(200, result, null);
 
        return new ResponseEntity<>(response,HttpStatus.OK);
     }

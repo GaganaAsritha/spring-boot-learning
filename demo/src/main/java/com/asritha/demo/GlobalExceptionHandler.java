@@ -19,7 +19,7 @@ public class GlobalExceptionHandler {
             errors.put(error.getField(), error.getDefaultMessage());
         });
 
-        ApiResponse<Map<String, String>> response = new ApiResponse<>(400, errors);
+        ApiResponse<Map<String, String>> response = new ApiResponse<>(400, null, errors);
 
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
